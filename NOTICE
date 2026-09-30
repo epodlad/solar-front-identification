@@ -1,0 +1,41 @@
+Solar Front Identification
+Copyright 2026 Olena Podladchikova
+
+CODE
+Apache License 2.0 applies to the original code in this package. The retained
+RMO solver in vendor/rmo is from https://github.com/epodlad/RMO, also Apache-2.0.
+The numerical modules are unmodified; their checksums are in vendor/SOURCE.json.
+Standalone drivers adapt paths, output handling and public documentation.
+Python dependencies and Matplotlib's fonts retain their own licenses.
+
+OBSERVATIONAL DATA
+The code license does not replace the terms of observational data, published
+works or third-party images. Instrument teams retain scientific credit.
+
+Solar Orbiter MAG and SWA data:
+The ESA archive pages state CC BY-NC 3.0 IGO:
+https://creativecommons.org/licenses/by-nc/3.0/igo/
+MAG: https://doi.org/10.5270/esa-ux7y320
+SWA: https://doi.org/10.5270/esa-ahypgn6
+The CDF files are included unchanged. Derived alignment tables and plots
+identify their source and do not replace this noncommercial condition.
+Solar Orbiter is a mission of international collaboration between ESA and
+NASA, operated by ESA. Cite Horbury et al. (2020) and Owen et al. (2020).
+
+SDO/AIA: Courtesy of NASA/SDO and the AIA, EVE, and HMI science teams.
+https://sdo.gsfc.nasa.gov/data/rules.php
+https://sdo.gsfc.nasa.gov/gallery/copyright/
+
+GOES-16 SUVI: NOAA/NCEI and the SUVI instrument team.
+https://www.ncei.noaa.gov/products/goes-r-solar-ultraviolet-imager-suvi
+
+STEREO/SECCHI: NASA and the SECCHI science team (observer metadata).
+Hinode/EIS: Hinode is a Japanese mission developed and launched by ISAS/JAXA,
+with NAOJ as domestic partner and NASA and STFC as international partners;
+operation and data support also involve ESA and NSC. Only derived coverage
+metadata are included here. See the archive acknowledgements for new data use.
+
+Published studies are credited in docs/DATA.md and docs/references.bib.
+The Hu et al. (2019) material is represented by numerical contour coordinates
+and a citation. Publisher figure images and article PDFs are not distributed.
+No instrument team or cited author is represented as endorsing this analysis.

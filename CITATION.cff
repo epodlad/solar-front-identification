@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the instrument and event studies listed in docs/DATA.md."
+title: "Solar Front Identification: Code and Data"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Podladchikova
+    given-names: Olena
+license: Apache-2.0
+abstract: >-
+  Reproducible local ideal-MHD single-front tests, three connected Riemann fans,
+  an independent Solar Orbiter boundary diagnostic, and SUVI/AIA geometric
+  comparisons. The software license applies to code; observational data retain
+  their separate source terms and acknowledgements in NOTICE.
+keywords:
+  - magnetohydrodynamics
+  - Riemann problem
+  - shocks
+  - Solar Orbiter
+  - EUV waves

@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "centre_x_arcsec": 448.9980102539063,
+      "centre_y_arcsec": 29.057497406005858
+    },
+    {
+      "centre_x_arcsec": 451.59801025390624,
+      "centre_y_arcsec": 31.25749740600586
+    },
+    {
+      "centre_x_arcsec": 448.39801025390625,
+      "centre_y_arcsec": 29.65749740600586
+    },
+    {
+      "centre_x_arcsec": 447.7980102539062,
+      "centre_y_arcsec": 27.65749740600586
+    },
+    {
+      "centre_x_arcsec": 448.7980102539062,
+      "centre_y_arcsec": 29.45749740600586
+    },
+    {
+      "centre_x_arcsec": 454.19801025390626,
+      "centre_y_arcsec": 33.65749740600586
+    },
+    {
+      "centre_x_arcsec": 448.19801025390626,
+      "centre_y_arcsec": 30.45749740600586
+    },
+    {
+      "centre_x_arcsec": 448.19801025390626,
+      "centre_y_arcsec": 27.65749740600586
+    },
+    {
+      "centre_x_arcsec": 448.9980102539063,
+      "centre_y_arcsec": 29.25749740600586
+    },
+    {
+      "centre_x_arcsec": 451.19801025390626,
+      "centre_y_arcsec": 30.85749740600586
+    },
+    {
+      "centre_x_arcsec": 446.19801025390626,
+      "centre_y_arcsec": 33.85749740600586
+    },
+    {
+      "centre_x_arcsec": 448.59801025390624,
+      "centre_y_arcsec": 29.057497406005858
+    },
+    {
+      "centre_x_arcsec": 448.9980102539063,
+      "centre_y_arcsec": 29.057497406005858
+    },
+    {
+      "centre_x_arcsec": 454.7980102539062,
+      "centre_y_arcsec": 34.05749740600586
+    },
+    {
+      "centre_x_arcsec": 447.39801025390625,
+      "centre_y_arcsec": 31.65749740600586
+    },
+    {
+      "centre_x_arcsec": 450.39801025390625,
+      "centre_y_arcsec": 34.65749740600586
+    }
+  ]
+}

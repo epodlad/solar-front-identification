@@ -1,0 +1,8 @@
+quantity,upstream_normalized_flux,downstream_normalized_flux,difference_down_minus_up
+mass,-1.0,-1.0,0.0
+normal_momentum,1.485947641340376,1.485947641340376,0.0
+t1_momentum,-0.04771947055206168,-0.04771947055206169,-6.938893903907228e-18
+t2_momentum,-0.0,-0.0,0.0
+t1_induction,-0.5202216506295081,-0.5202216506295081,0.0
+t2_induction,-0.0,-0.0,0.0
+total_energy,-1.657729249609332,-1.6577292496093319,2.220446049250313e-16

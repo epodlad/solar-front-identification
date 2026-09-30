@@ -1,0 +1,14 @@
+{
+  "scope": "Approximate recovery of the published Hu et al. 2019 Fig2 ellipsoid near16:00UT, not a new observational fit or the authors' original parameter table.",
+  "source": "Hu et al. 2019 ApJ878106 Fig2a-d, doi10.3847/1538-4357/ab2055; ellipsoid method credited there to Kwon et al.2014. Liu et al.2019 ApJ8718 provides related context, not a substituted local normal.",
+  "image_orientation": "All six embedded PDF image transforms have negative vertical scale. Use their original512pixel arrays flipped vertically to reproduce the published sky orientation; panel text not used.",
+  "epoch": "Panels a-d show one model around16:00UT; image times span15:59:19..16:00:30. Do not relabel this as a reconstructed16:05:30 surface.",
+  "model": "Axisymmetric ellipsoid centered at d*e, symmetry axis e radial from Sun center. Parameters d,a_radial,b_lateral,longitude,latitude. Sun radius normalized to1. Orthographic projection as a graphical recovery approximation.",
+  "fit_inputs": "Only colored published model wireframe and cyan photospheric-intersection curves, plus white solar-circle scale in panels a-d. No AIA brightness peaks, rear minima, contact locations or36.5deg illustration enter fitting.",
+  "primary_constraints": "Cyan intersection curves in high-resolution EUV panels a,b; outer support of yellow mesh in complete coronagraph panels c,d. Recover solar centers and radii from white circle pixels with fixed visual annulus windows.",
+  "registration": "North-up image axes are taken from the published view; use near16:00 observer heliographic latitudes and longitude from AIA/EUVI metadata. Check consistency of recovered projections in both views.",
+  "validation": "Overlay recovered model projections on digitized source geometry; compare partial high-resolution yellow mesh in a,b. Retain residuals and parameter/normal sensitivity to pixel-scale perturbations.",
+  "evaluation": "Intersect recovered surface with the existing S1 direction at assumed heights0,50,100Mm. Evaluate outward ellipsoid normal, inclination to Earth sky plane, inclination above solar tangent plane, and projected angle to S1. Height assumptions remain explicit.",
+  "uncertainty": "Pixel/scale perturbation sensitivity is not a confidence interval and does not include the original authors' model uncertainty. No claim of unique3D reconstruction or observed contact.",
+  "preservation": "All original model states, P080/P100/P120 solutions and prior tests remain unchanged. The current angle estimate is independent of the illustrative contact placement."
+}

@@ -1,0 +1,119 @@
+{
+  "title": "Solar-context local MHD fan: illustrative 750 km/s calibration",
+  "case": "SOLAR_CONTEXT_ASSUMED_LOCAL_FAN_750",
+  "status": "ASSUMED_MODEL_NOT_OBSERVATIONALLY_RECONSTRUCTED",
+  "equations": "1D ideal adiabatic MHD; isotropic pressure; constant Bn; no gravity, heat conduction, radiation, resistivity or ongoing driver forcing",
+  "gamma": 1.6666666666666667,
+  "mu0_normalized": 1.0,
+  "mu0_SI": 1.2566370614359173e-06,
+  "coordinate_system": {
+    "axes": [
+      "n",
+      "t1",
+      "t2"
+    ],
+    "orientation": "right handed",
+    "normal": "positive n points from assumed driver/shell side toward ambient corona; exact heliographic normal is unspecified",
+    "frame": "ambient rest frame",
+    "velocity": "plasma velocity, not EUV pattern speed",
+    "initial_discontinuity": "x=0 at t=0; homogeneous LEFT for x<0 and RIGHT for x>0",
+    "event_epoch": "not assigned; t is model age, not a measured launch time"
+  },
+  "normalization": {
+    "density_kg_m3": 1.6726219236900002e-13,
+    "velocity_m_s": 203155.11015878012,
+    "pressure_Pa": 0.0069032450000000006,
+    "magnetic_field_T": 9.313900102090527e-05,
+    "length_m": 20000000.0,
+    "time_s": 98.44694521525243
+  },
+  "composition": "fully ionized pure hydrogen, Te=Tp; p=2ne kB T; rho=ne mp",
+  "primitive_order": [
+    "rho",
+    "p",
+    "un",
+    "ut1",
+    "ut2",
+    "Bn",
+    "Bt1",
+    "Bt2"
+  ],
+  "conservative_order": [
+    "rho",
+    "rho_un",
+    "rho_ut1",
+    "rho_ut2",
+    "Bt1",
+    "Bt2",
+    "E"
+  ],
+  "energy_definition": "E = p/(gamma-1) + rho*(un^2+ut1^2+ut2^2)/2 + (Bn^2+Bt1^2+Bt2^2)/(2*mu0)",
+  "states": {
+    "LEFT": {
+      "primitive_normalized": [
+        2.0,
+        1.0184778732605724,
+        1.1781736663590998,
+        0.0,
+        0.0,
+        0.8566121544208019,
+        4.217991454990482,
+        0.7437456979125767
+      ],
+      "physical": {
+        "id": "LEFT",
+        "rho_kg_m3": 3.3452438473800004e-13,
+        "ne_cm3": 200000000.0,
+        "p_Pa": 0.007030802286196681,
+        "T_MK": 1.2730973415757156,
+        "u_km_s": [
+          239.3520009753568,
+          0.0,
+          0.0
+        ],
+        "B_gauss": [
+          0.7978400032511893,
+          3.9285951043252823,
+          0.6927173131717339
+        ]
+      }
+    },
+    "RIGHT": {
+      "primitive_normalized": [
+        1.0,
+        0.38192920247271467,
+        0.0,
+        0.0,
+        0.0,
+        0.8566121544208019,
+        2.1415303860520045,
+        0.0
+      ],
+      "physical": {
+        "id": "RIGHT",
+        "rho_kg_m3": 1.6726219236900002e-13,
+        "ne_cm3": 100000000.0,
+        "p_Pa": 0.0026365508573237555,
+        "T_MK": 0.9548230061817867,
+        "u_km_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "B_gauss": [
+          0.7978400032511893,
+          1.9946000081279733,
+          0.0
+        ]
+      }
+    }
+  },
+  "suggested_numerical_domain": {
+    "x_min_m": -100000000.0,
+    "x_max_m": 100000000.0,
+    "initial_jump_m": 0,
+    "output_time_s": 60.0,
+    "boundary": "fixed original LEFT/RIGHT reservoir states; boundaries outside the fan",
+    "warning": "Initial moving LEFT reservoir is only a local surrogate for a piston; it is not a measured time-dependent piston boundary condition."
+  }
+}

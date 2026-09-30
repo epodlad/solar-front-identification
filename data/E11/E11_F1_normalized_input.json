@@ -1,0 +1,57 @@
+{
+  "schema_version": "rmo-local-discontinuity-0.1",
+  "case_id": "R110_F1",
+  "model": "ideal_mhd_single_planar_discontinuity",
+  "units": "normalized_mu0_1",
+  "frame": "common_inertial_local_basis",
+  "gamma": 1.6666666666666667,
+  "front_speed": 0,
+  "basis": {
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "t1": [
+      0,
+      1,
+      0
+    ],
+    "t2": [
+      0,
+      0,
+      1
+    ]
+  },
+  "left": {
+    "rho": 1.0,
+    "p": 0.05969671755027295,
+    "u": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "B": [
+      0.5,
+      0.4484735890395955,
+      0.0
+    ]
+  },
+  "right": {
+    "rho": 1.5625,
+    "p": 0.14835167793452875,
+    "u": [
+      0.64,
+      0.20698781032596716,
+      0.0
+    ],
+    "B": [
+      0.5,
+      0.8624492096915298,
+      0.0
+    ]
+  },
+  "uncertainty": {
+    "mode": "exact_synthetic"
+  }
+}

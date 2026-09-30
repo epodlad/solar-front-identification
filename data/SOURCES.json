@@ -1,0 +1,80 @@
+[
+  {
+    "file": "solo/raw/solo_L2_mag-rtn-normal_20210830_V03.cdf",
+    "url": "https://soar.esac.esa.int/soar-sl-tap/data?retrieval_type=PRODUCT&data_item_id=solo_L2_mag-rtn-normal_20210830&product_type=SCIENCE",
+    "sha256": "1f5edb8e5102eaac4e21130684a14d4ca15b4d03cd6f61ff37cb29cc016d1fa8",
+    "version": "V03",
+    "archive_download_may_contain_multiple_versions": true
+  },
+  {
+    "file": "solo/raw/solo_L2_swa-pas-grnd-mom_20210830_V03.cdf",
+    "url": "https://soar.esac.esa.int/soar-sl-tap/data?retrieval_type=PRODUCT&data_item_id=solo_L2_swa-pas-grnd-mom_20210830&product_type=SCIENCE",
+    "sha256": "59a42214b6e1596e45987087b316fe0525038fcbecf3c6d7e9ec7d33249ca400",
+    "version": "V03",
+    "archive_download_may_contain_multiple_versions": true
+  },
+  {
+    "file": "suvi/NCEI_SUVI_195_G16_20170910_153024_v_0_1_0.fits.gz",
+    "url": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/goes16/l1b/suvi-l1b-fe195/2017/09/10/NCEI_SUVI_195_G16_20170910_153024_v_0_1_0.fits.gz",
+    "sha256": "6dfa292d02ca861c6aa5bed89d800823d4ec7d2c5b33ea916b7f7febd674052c"
+  },
+  {
+    "file": "suvi/NCEI_SUVI_195_G16_20170910_155824_v_0_1_0.fits.gz",
+    "url": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/goes16/l1b/suvi-l1b-fe195/2017/09/10/NCEI_SUVI_195_G16_20170910_155824_v_0_1_0.fits.gz",
+    "sha256": "90b08e8f8a08af2c67cf5ab4907720a39ed66708e258fd4c87fcd589c0915143"
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "20170910T155948Z.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T15%3A59%3A48Z&sourceId=11",
+    "actual_UTC": "2017-09-10T15:59:29.84Z",
+    "sha256": "2e32b0c4134703daa63e48342b930df62b5f4dfbdf1d0036bd1f62ac4c1d3a28",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "AIA193_requested_160042.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T16%3A00%3A42Z&sourceId=11",
+    "actual_UTC": "2017-09-10T16:00:41.84Z",
+    "sha256": "a52f8acc64263045f3f9fe2dcc2a7d66d651d98cf44fecdcf6b4dc22e1da2639",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "AIA193_requested_160154.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T16%3A01%3A54Z&sourceId=11",
+    "actual_UTC": "2017-09-10T16:01:53.84Z",
+    "sha256": "e3c94edd31c07c2baa9b4a1969ee769d8644b248586de37447497dca44bb8a24",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "AIA193_requested_160306.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T16%3A03%3A06Z&sourceId=11",
+    "actual_UTC": "2017-09-10T16:03:05.85Z",
+    "sha256": "dc6344832bac3d97dba33570bf3c49af66b8992d390ced3909dde5ea81520dae",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "AIA193_requested_160418.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T16%3A04%3A18Z&sourceId=11",
+    "actual_UTC": "2017-09-10T16:04:17.84Z",
+    "sha256": "0fdfc400ab03803869864dbac5ad4578bc54006bc7c5f84a14932da55f171f82",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "file_not_bundled": "AIA193_requested_160530.jp2",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T16%3A05%3A30Z&sourceId=11",
+    "actual_UTC": "2017-09-10T16:05:29.84Z",
+    "sha256": "9afc7709c600230875723d14bcee9aacac8445ad914cba1a0e36ebf1d9dcee17",
+    "purpose": "Display geometry only; retained samples are bundled."
+  },
+  {
+    "instrument": "AIA 193",
+    "actual_UTC": "2017-09-10T15:51:05.84Z",
+    "url": "https://api.helioviewer.org/v2/getJP2Image/?date=2017-09-10T15%3A51%3A06Z&sourceId=11",
+    "purpose": "Earlier reference; original request recorded in the acquisition script."
+  }
+]

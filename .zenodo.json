@@ -1,0 +1,45 @@
+{
+  "title": "Solar Front Identification: Code and Data",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Podladchikova, Olena",
+      "affiliation": "National Technical University of Ukraine, Igor Sikorsky Kyiv Polytechnic Institute; Leibniz Institute for Astrophysics Potsdam (AIP)"
+    }
+  ],
+  "description": "<p>Standalone Python code and a compact data subset for the manuscript <em>Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem</em>.</p><p>The package reproduces three single-front tests, three regular Riemann fans and independent conservation checks, a Solar Orbiter MAG/SWA-PAS boundary diagnostic, SUVI and AIA positional comparisons, geometric checks, and seven Matplotlib figures. Full-precision inputs, a tested dependency list, reference results, data provenance and usage instructions are included.</p><p>The coronal states are prescribed. The image comparisons do not establish an observed complete fan, contact or rarefaction. Reproduction begins from the supplied image/profile subsets as documented in docs/DATA.md.</p><p>Apache-2.0 applies to code. Observational data retain their original terms: Solar Orbiter MAG and SWA data are distributed under CC BY-NC 3.0 IGO. See NOTICE for data credits and source-specific terms.</p>",
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "apache-2.0",
+  "keywords": [
+    "magnetohydrodynamics",
+    "Riemann problem",
+    "shock identification",
+    "Solar Orbiter",
+    "SUVI",
+    "AIA",
+    "EUV waves"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/epodlad/RMO",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1051/0004-6361/202345922",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5270/esa-ux7y320",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5270/esa-ahypgn6",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

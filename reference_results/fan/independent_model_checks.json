@@ -1,0 +1,287 @@
+[
+  {
+    "case": "P080",
+    "independent_checks_pass": true,
+    "states_positive": true,
+    "ordered": true,
+    "discontinuities": [
+      {
+        "family": "alfven_minus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 8.873837773956799e-18,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 4.092726157978177e-14,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 1.0
+      },
+      {
+        "family": "slow_minus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 5.76799455307192e-17,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.012712955972071449,
+        "min_Lax_margin_km_s": 7.853639878159156,
+        "compression": 1.4240329343482239
+      },
+      {
+        "family": "entropy",
+        "structure": "contact",
+        "max_scaled_flux_residual": 2.328769253984719e-16,
+        "Bn_jump_G": 0.0,
+        "density_ratio_RIGHT_LEFT": 0.6464885960783202,
+        "max_material_speed_error_km_s": 1.7462298274040223e-13,
+        "pressure_jump_Pa": 0.0,
+        "B_jump_G": 1.3552527156068805e-16,
+        "velocity_jump_km_s": 1.7462298274040223e-13
+      },
+      {
+        "family": "alfven_plus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 1.1023619746229748e-17,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 9.549694368615747e-15,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 1.0
+      },
+      {
+        "family": "fast_plus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 2.6456687390951394e-16,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.3421528907405069,
+        "min_Lax_margin_km_s": 185.4320367126622,
+        "compression": 1.6537238683547726
+      }
+    ],
+    "rarefactions": [
+      {
+        "family": "fast_minus",
+        "samples": 41,
+        "isentrope_relative_error": 2.220446049250313e-16,
+        "characteristic_monotonic_in_spatial_order": true,
+        "density_tail_over_head": 0.8967455145763347,
+        "pressure_tail_over_head": 0.8339026522021757
+      },
+      {
+        "family": "slow_plus",
+        "samples": 41,
+        "isentrope_relative_error": 2.220446049250313e-16,
+        "characteristic_monotonic_in_spatial_order": true,
+        "density_tail_over_head": 0.9984288371815301,
+        "pressure_tail_over_head": 0.9973827669602017
+      }
+    ],
+    "max_scaled_flux_residual": 2.6456687390951394e-16,
+    "initial_left_temperature_MK": 1.0184778732605726,
+    "fast_shock_speed_km_s": 746.5876964451268,
+    "contact_speed_km_s": 295.05323073025977,
+    "rarefaction_bounds_km_s": [
+      -409.2743944080368,
+      -306.76528513615784
+    ],
+    "independent_condition_flags": {
+      "positive_states": true,
+      "common_normal_B": true,
+      "matching": true,
+      "fluxes": true,
+      "shock_entropy_and_Lax": true,
+      "contacts": true,
+      "rotations": true,
+      "rarefactions": true,
+      "wave_order": true
+    }
+  },
+  {
+    "case": "P100",
+    "independent_checks_pass": true,
+    "states_positive": true,
+    "ordered": true,
+    "discontinuities": [
+      {
+        "family": "alfven_minus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 2.328769253984719e-17,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 2.9103830456733704e-14,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 1.0
+      },
+      {
+        "family": "slow_minus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 2.283011915048009e-17,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.0060479018783227145,
+        "min_Lax_margin_km_s": 6.854021818442765,
+        "compression": 1.3179887534421446
+      },
+      {
+        "family": "entropy",
+        "structure": "contact",
+        "max_scaled_flux_residual": 1.7468680366452874e-14,
+        "Bn_jump_G": 0.0,
+        "density_ratio_RIGHT_LEFT": 0.7321414563445914,
+        "max_material_speed_error_km_s": 1.3329554349184037e-11,
+        "pressure_jump_Pa": 0.0,
+        "B_jump_G": 5.854691731421724e-14,
+        "velocity_jump_km_s": 1.3329554349184037e-11
+      },
+      {
+        "family": "slow_plus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 4.680324618087426e-17,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 1.3493817485908666e-05,
+        "min_Lax_margin_km_s": 1.1748416941526811,
+        "compression": 1.0367274085815983
+      },
+      {
+        "family": "alfven_plus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 4.680324618087426e-17,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 1.4779288903810084e-13,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 1.0000000000000002
+      },
+      {
+        "family": "fast_plus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 5.479228596115222e-16,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.3512542556695215,
+        "min_Lax_margin_km_s": 187.3228206259386,
+        "compression": 1.6617382807252596
+      }
+    ],
+    "rarefactions": [
+      {
+        "family": "fast_minus",
+        "samples": 41,
+        "isentrope_relative_error": 2.220446049250313e-16,
+        "characteristic_monotonic_in_spatial_order": true,
+        "density_tail_over_head": 0.8926691090066843,
+        "pressure_tail_over_head": 0.8275943371223436
+      }
+    ],
+    "max_scaled_flux_residual": 1.7468680366452874e-14,
+    "initial_left_temperature_MK": 1.2730973415757154,
+    "fast_shock_speed_km_s": 749.9999999999992,
+    "contact_speed_km_s": 300.4217248901672,
+    "rarefaction_bounds_km_s": [
+      -414.475037436578,
+      -307.10990103843744
+    ],
+    "baseline_max_scaled_state_difference": 1.0348037047491722e-12,
+    "independent_condition_flags": {
+      "positive_states": true,
+      "common_normal_B": true,
+      "matching": true,
+      "fluxes": true,
+      "shock_entropy_and_Lax": true,
+      "contacts": true,
+      "rotations": true,
+      "rarefactions": true,
+      "wave_order": true
+    }
+  },
+  {
+    "case": "P120",
+    "independent_checks_pass": true,
+    "states_positive": true,
+    "ordered": true,
+    "discontinuities": [
+      {
+        "family": "alfven_minus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 4.8958119028680736e-17,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 1.4551915228366852e-14,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 1.0
+      },
+      {
+        "family": "slow_minus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 5.830911976315875e-14,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.00292864099603235,
+        "min_Lax_margin_km_s": 5.889561595675128,
+        "compression": 1.2416909068170197
+      },
+      {
+        "family": "entropy",
+        "structure": "contact",
+        "max_scaled_flux_residual": 1.7178390385675433e-14,
+        "Bn_jump_G": 0.0,
+        "density_ratio_RIGHT_LEFT": 0.8107760978505145,
+        "max_material_speed_error_km_s": 1.5890691429376603e-11,
+        "pressure_jump_Pa": 0.0,
+        "B_jump_G": 1.5233040523421337e-13,
+        "velocity_jump_km_s": 4.511093720793724e-11
+      },
+      {
+        "family": "slow_plus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 2.910961567480899e-17,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 9.607238760171721e-05,
+        "min_Lax_margin_km_s": 2.247122332152212,
+        "compression": 1.0716717724944993
+      },
+      {
+        "family": "alfven_plus",
+        "structure": "rotation",
+        "max_scaled_flux_residual": 4.8958119028680736e-17,
+        "Bn_jump_G": 0.0,
+        "Walen_residual_km_s": 1.1004885891452431e-13,
+        "relative_density_jump": 0.0,
+        "relative_pressure_jump": 0.0,
+        "Bt_norm_ratio": 0.9999999999999999
+      },
+      {
+        "family": "fast_plus",
+        "structure": "shock",
+        "max_scaled_flux_residual": 5.587224617993191e-16,
+        "Bn_jump_G": 0.0,
+        "entropy_increase_over_cv": 0.3603436517301922,
+        "min_Lax_margin_km_s": 189.18945342238584,
+        "compression": 1.6696693402602636
+      }
+    ],
+    "rarefactions": [
+      {
+        "family": "fast_minus",
+        "samples": 41,
+        "isentrope_relative_error": 3.3306690738754696e-16,
+        "characteristic_monotonic_in_spatial_order": true,
+        "density_tail_over_head": 0.8886849609738743,
+        "pressure_tail_over_head": 0.821447321661928
+      }
+    ],
+    "max_scaled_flux_residual": 5.830911976315875e-14,
+    "initial_left_temperature_MK": 1.527716809890859,
+    "fast_shock_speed_km_s": 753.3867300497323,
+    "contact_speed_km_s": 305.56362380479004,
+    "rarefaction_bounds_km_s": [
+      -419.6401529354805,
+      -307.45385561396694
+    ],
+    "independent_condition_flags": {
+      "positive_states": true,
+      "common_normal_B": true,
+      "matching": true,
+      "fluxes": true,
+      "shock_entropy_and_Lax": true,
+      "contacts": true,
+      "rotations": true,
+      "rarefactions": true,
+      "wave_order": true
+    }
+  }
+]

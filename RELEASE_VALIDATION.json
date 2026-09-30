@@ -1,0 +1,51 @@
+{
+  "command": "python run.py all --output <fresh-directory>",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "astropy": "8.0.1",
+    "cdflib": "1.3.14",
+    "Pillow": "12.3.0"
+  },
+  "checks": {
+    "P080_state_max_scaled_difference": 0.0,
+    "P100_state_max_scaled_difference": 0.0,
+    "P120_state_max_scaled_difference": 0.0,
+    "all_fan_physical_checks_pass": true,
+    "largest_fixed_scale_flux_residual": 5.830911976315875e-14,
+    "walen_max_slope_difference": 0.0,
+    "single_fronts_all_pass": true,
+    "aia_primary_reproduced": true,
+    "aia_variants": 18,
+    "suvi_last_epoch_outside_B_all_variants": true,
+    "stereo_visible_points": 0,
+    "figure_pdf_count": 7,
+    "pdf_metadata": {
+      "figure00_observational_overview.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure03_three_fans.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure05_suvi_constraint.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure02_solar_orbiter.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure01_local_pairs.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure06_aia_comparison.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      },
+      "figure04_model_states.pdf": {
+        "/Creator": "Python/Matplotlib 3.10.8"
+      }
+    }
+  },
+  "figure_visual_review": "All seven plots inspected as PNG; SUVI PDF also rendered with Poppler. No clipped labels or missing panels observed."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "Exploratory geometry follow-up after visual inspection of full-context frames; fixed before this angular survey. No MHD quantities used.",
+  "anchor_xy_arcsec": [1125.5636584474762, 193.169093223342],
+  "anchor_origin": "Previously measured B minimum at 16:00:24, held fixed for every frame and direction.",
+  "angles_deg_counterclockwise_from_Solar_X": [30,45,60,75,90,105,120,134.577103,150],
+  "old_angle_note": "The exact old angle is computed from the retained direction_xy; the approximate entry is replaced with that exact value by the script.",
+  "s_range_arcsec": [-300,1000],
+  "sample_step_arcsec": 2.5,
+  "ray_offsets_arcsec": [-10,-5,0,5,10],
+  "primary_baseline": "15:30:24",
+  "primary_sigma_arcsec": 5,
+  "radiance": "Calibrated FITS radiance, WCS bilinear sample, mean of all five rays before baseline division; no extra exposure normalization.",
+  "positive_candidate_rule": {"interval_arcsec": [50,800], "minimum_height_relative": 0.1, "minimum_prominence_relative": 0.05, "minimum_half_prominence_width_arcsec": 10, "minimum_peak_separation_arcsec": 20},
+  "seed_rule": "Strongest-prominence qualified positive peak in s=[50,350] at first epoch 15:54:24. Retain all alternatives; this is not an outer-shock label.",
+  "tracking": {"template_halfwidth_arcsec": 50, "profile": "positive part of base-relative profile", "lag_bounds_arcsec": [-30,350], "maximum_positive_rate_arcsec_per_s": 4, "minimum_NCC": 0.8, "minimum_distinct_peak_margin": 0.05, "distinct_peak_separation_arcsec": 20, "reverse_closure_arcsec": 5, "require_all_five_rays_off_limb_and_finite": true, "stop_chain_on_first_failure": true},
+  "ranking": "Descending uninterrupted qualified-link count, then median NCC on passed links; all angles and failures retained. A coherent chord is not automatically a physical normal.",
+  "selection_scope": "Candidate brightness-pattern tracking, not material velocity or MHD wave identification. No model-fitting or solar deprojection.",
+  "projection_tests": "Compute off-limb and finite-data support for each ray at every sampled position. Separate an inner bright structure from a more distant candidate crest in plots; neither is pre-labelled as contact or shock."
+}

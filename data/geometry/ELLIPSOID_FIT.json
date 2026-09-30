@@ -1,0 +1,33 @@
+{
+  "parameter_order": [
+    "axis_longitude_W_deg",
+    "axis_latitude_deg",
+    "surface_intersection_mu",
+    "radial_semiaxis_Rsun",
+    "lateral_semiaxis_Rsun"
+  ],
+  "cyan_only_parameters": [
+    96.98498453953424,
+    -5.268571690816591,
+    0.7375322508898221
+  ],
+  "cyan_only_RMS_pixels": 2.8014922951400223,
+  "joint_parameters": [
+    96.81877107345758,
+    -4.937032814056087,
+    0.7370724677420324,
+    1.0668214292061973,
+    1.1641161595378182
+  ],
+  "center_distance_Rsun": 1.605713814466112,
+  "axis_vector_HGS": [
+    -0.11828877442632536,
+    0.9892427859085244,
+    -0.0860608875893067
+  ],
+  "success": true,
+  "joint_residual_RMS_pixels_weighted": 1.2793269070772277,
+  "joint_cyan_RMS_pixels": 2.8610389099267457,
+  "source": "Approximate digitization of Hu et al.2019 Fig2a-d at ~16:00UT; not original author parameters.",
+  "q_outer_support": 0.995
+}

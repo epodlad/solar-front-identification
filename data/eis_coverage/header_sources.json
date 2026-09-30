@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eis_20170910_152436.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_152436.head.h5",
+    "bytes": 332376,
+    "sha256": "ae9fe5717bb408518a5f4c86bab8679d2181f787788b134d5c736246374b443e"
+  },
+  {
+    "name": "eis_20170910_153331.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_153331.head.h5",
+    "bytes": 332376,
+    "sha256": "f6f2c9d57283d4ac7077c2938f6ee5f7e9b7d0fa8ea3618d66b30ee340dbad0d"
+  },
+  {
+    "name": "eis_20170910_154226.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_154226.head.h5",
+    "bytes": 332376,
+    "sha256": "953044057e14c533c5e769302372446f7cd48ab828f2ba0e64c50d89f6b2782e"
+  },
+  {
+    "name": "eis_20170910_155121.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_155121.head.h5",
+    "bytes": 332376,
+    "sha256": "f511e7b9bee8a678a822465fbc95da35d9becab037e751dcad7100ccb7528042"
+  },
+  {
+    "name": "eis_20170910_160016.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_160016.head.h5",
+    "bytes": 332376,
+    "sha256": "2d444cb17cebb2d667f391ec916203c1d1bd1f1c1890ac31a7d924e79f2384f3"
+  },
+  {
+    "name": "eis_20170910_160911.head.h5",
+    "url": "https://vsolar.mssl.ucl.ac.uk/eispac/hdf5/2017/09/10/eis_20170910_160911.head.h5",
+    "bytes": 332376,
+    "sha256": "ca8517710abb726d2c84b6d9450eebaf19af0c4dbf36cd4d76e5b8d6a9c99e08"
+  }
+]

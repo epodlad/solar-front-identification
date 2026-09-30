@@ -1,0 +1,99 @@
+{
+  "case": "E11 / R110_F1",
+  "event": "2010-06-13",
+  "source_sha256": "b56667e259f0195623812f8298999f0ea61be6ab41529115cb24e865281ea85d",
+  "method": "Direct substitution and closed-form construction; no Riemann solver or classifier called.",
+  "frame": "Shock at rest; positive normal from upstream into downstream; common tangential boost sets upstream ut=0.",
+  "gamma": 1.6666666666666667,
+  "flux_reference_scales": "rho0*U0; rho0*U0^2; B0*U0; rho0*U0^3, as applicable",
+  "input_units": "rho0=1,U0=1,mu0=1; original full precision retained",
+  "checks": {
+    "positive_density_and_pressure": true,
+    "compression": true,
+    "normal_field_continuity": true,
+    "all_fluxes": true,
+    "positive_entropy_production": true,
+    "upstream_superfast": true,
+    "downstream_subfast_superalfvenic": true,
+    "closed_form_reproduces_saved_pair": true,
+    "dimensional_scale_consistency": true,
+    "matches_saved_characteristic_values": true
+  },
+  "max_dimensionless_flux_residual": 1.1102230246251565e-16,
+  "entropy_increase_over_cv": 0.16649678312666527,
+  "compression": 1.5625,
+  "pressure_ratio": 2.4850893654177213,
+  "characteristics_normalized": {
+    "upstream": {
+      "slow": 0.22282438274244537,
+      "alfven_n": 0.5,
+      "fast": 0.7077940263748763
+    },
+    "downstream": {
+      "slow": 0.18239950300550736,
+      "alfven_n": 0.4,
+      "fast": 0.8723623904379435
+    }
+  },
+  "characteristics_km_s": {
+    "upstream": {
+      "slow": 157.21047689699222,
+      "alfven_n": 352.7676705800776,
+      "fast": 499.3736998695183
+    },
+    "downstream": {
+      "slow": 128.6892955804334,
+      "alfven_n": 282.2141364640621,
+      "fast": 615.482496752923
+    }
+  },
+  "closed_form": {
+    "b": 0.05969671755027295,
+    "h": 0.25,
+    "M": 1.9711193941384926,
+    "W": 4.658203125,
+    "left_Bt": 0.4484735890395955,
+    "right_Bt": 0.8624492096915297,
+    "right_p": 0.14835167793452886,
+    "right_ut": 0.2069878103259671,
+    "max_absolute_state_difference": 1.1102230246251565e-16
+  },
+  "dimensional_states": {
+    "UPSTREAM": {
+      "rho_kg_m3": 9.035100408031457e-14,
+      "ne_cm3": 54017589.27145332,
+      "p_Pa": 0.0026848558983338373,
+      "T_MK": 1.7999999975678904,
+      "u_shock_frame_m_s": [
+        705535.3411601553,
+        0.0,
+        0.0
+      ],
+      "B_T": [
+        0.00011886669865306495,
+        0.00010661714992445618,
+        0.0
+      ]
+    },
+    "DOWNSTREAM": {
+      "rho_kg_m3": 1.4117344387549153e-13,
+      "ne_cm3": 84402483.23664583,
+      "p_Pa": 0.006672106840628462,
+      "T_MK": 2.8628229450930482,
+      "u_shock_frame_m_s": [
+        451542.61834249937,
+        146037.21537432476,
+        0.0
+      ],
+      "B_T": [
+        0.00011886669865306495,
+        0.0002050329806239542,
+        0.0
+      ]
+    }
+  },
+  "normal_B_relative_jump": 0,
+  "model_classification": "ordinary fast shock for this supplied exact pair",
+  "observational_classification": "unresolved; field, geometry, flow and radio/EUV state association remain conditional",
+  "uncertainty_statement": "central conditional example; no new observational uncertainty propagation"
+}

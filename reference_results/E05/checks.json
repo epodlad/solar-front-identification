@@ -1,0 +1,340 @@
+{
+  "event": "E05 / 2011-02-16",
+  "source_sha256": "450b2ee843392ffe49a0e4bca40c5feaffb1fcf2ede3bb471c4994a03db844c9",
+  "method": "Direct scalar fluxes, entropy, characteristic ordering and algebraic RH reconstruction; no solver or classifier called.",
+  "uncertainty": "Two retained central illustrations; no new spectrum fitting, state inference or uncertainty propagation.",
+  "flux_scales": "mass rho0 U0; momentum rho0 U0^2; induction B0 U0; energy rho0 U0^3; fixed references, not per-flux relative errors.",
+  "selection": "Unchanged R131 central fast(45,80) and slow(60,30) illustrations; not the later best reference-spectrum witnesses of R134.",
+  "pairs": {
+    "FAST": {
+      "case_id": "E05-assumed-371-45-80-1.58489e+06",
+      "checks": {
+        "positive_density_pressure": true,
+        "compression": true,
+        "normal_field_continuous": true,
+        "right_to_left_mass_flow": true,
+        "conserved_fluxes": true,
+        "entropy_increases": true,
+        "fast_transition_only": true,
+        "RH_reconstruction_agrees": true,
+        "magnetic_jump_sign": true,
+        "archived_characteristics_reproduced": true,
+        "dimensional_archived_quantities_reproduced": true,
+        "same_conditional_Doppler_constraint": true,
+        "orthonormal_archived_basis": true
+      },
+      "frame": "Original local n,t1,t2 preserved; only normal boost by D. LEFT=downstream; RIGHT=upstream; signed normal flow is negative.",
+      "gamma": 1.6666666666666667,
+      "scales_SI": {
+        "rho0_kg_m3": 3.547199916139567e-13,
+        "U0_m_s": 262336.61582020926,
+        "p0_Pa": 0.024412007182868335,
+        "B0_T": 0.00017514860253519627,
+        "mu0": 1.2566370614359173e-06,
+        "mp": 1.67262192369e-27,
+        "kB": 1.380649e-23
+      },
+      "signed_w_normalized": {
+        "upstream": -1.0,
+        "downstream": -0.9022375441634743
+      },
+      "inflow_magnitude_km_s": {
+        "upstream": 262.33661582020926,
+        "downstream": 236.68994400178246
+      },
+      "compression": 1.108355561646648,
+      "pressure_ratio": 1.1875307073277315,
+      "entropy_increase_over_cv": 0.00041371396190578724,
+      "max_dimensionless_flux_residual": 2.220446049250313e-16,
+      "flux_residuals": {
+        "mass": 0.0,
+        "normal_momentum": 0.0,
+        "t1_momentum": -6.938893903907228e-18,
+        "t2_momentum": 0.0,
+        "t1_induction": 0.0,
+        "t2_induction": 0.0,
+        "total_energy": 2.220446049250313e-16
+      },
+      "characteristics_normalized": {
+        "upstream": {
+          "slow": 0.07586082318580024,
+          "alfven_n": 0.09172911295467512,
+          "fast": 0.9298865812577051
+        },
+        "downstream": {
+          "slow": 0.07166577548310056,
+          "alfven_n": 0.08712998541661046,
+          "fast": 0.9677853562054608
+        }
+      },
+      "characteristics_km_s": {
+        "upstream": {
+          "slow": 19.9010716278981,
+          "alfven_n": 24.063905064719187,
+          "fast": 243.94329882377036
+        },
+        "downstream": {
+          "slow": 18.800557010367523,
+          "alfven_n": 22.857385510657775,
+          "fast": 253.88553518729634
+        }
+      },
+      "analytical_reconstruction": {
+        "A": 118.8462854681166,
+        "Bt_down_over_Bt_up": 1.1093755939292083,
+        "downstream": {
+          "rho": 1.108355561646648,
+          "p": 0.4213827709891858,
+          "u": [
+            0.09776245583652565,
+            -0.005219345433619115,
+            0.0
+          ],
+          "B": [
+            0.09172911295467512,
+            0.5771212026419437,
+            0.0
+          ]
+        },
+        "max_absolute_state_difference": 0.0
+      },
+      "model_B_strength_jump_G": 0.0982910419902775,
+      "equal_bounded_error_each_for_jump_sign_G": 0.04914552099513875,
+      "dimensional_states": {
+        "RIGHT_UPSTREAM": {
+          "rho_kg_m3": 3.547199916139567e-13,
+          "ne_cm3": 212074221.071671,
+          "p_Pa": 0.008662343776585849,
+          "T_K": 1479225.062258031,
+          "u_original_local_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u_shock_local_m_s": [
+            -262336.61582020926,
+            0.0,
+            0.0
+          ],
+          "B_local_T": [
+            1.6066225945804514e-05,
+            9.111609511631145e-05,
+            0.0
+          ],
+          "B_magnitude_G": 0.9252170775221541
+        },
+        "LEFT_DOWNSTREAM": {
+          "rho_kg_m3": 3.931558755325813e-13,
+          "ne_cm3": 235053642.40666732,
+          "p_Pa": 0.010286799232124966,
+          "T_K": 1584893.1924611141,
+          "u_original_local_m_s": [
+            25646.671818426807,
+            -1369.2254178523012,
+            0.0
+          ],
+          "u_shock_local_m_s": [
+            -236689.94400178245,
+            -1369.2254178523012,
+            0.0
+          ],
+          "B_local_T": [
+            1.6066225945804514e-05,
+            0.00010108197213616825,
+            0.0
+          ],
+          "B_magnitude_G": 1.0235081195124316
+        }
+      },
+      "source_derived": {
+        "front_normal_speed_km_s": 262.33661582020926,
+        "normal_LOS_projection": 0.6456822545397924,
+        "compression": 1.108355561646648,
+        "ne_up_cm3": 212074221.071671,
+        "ne_down_cm3": 235053642.40666732,
+        "T_up_K": 1479225.062258031,
+        "T_down_K": 1584893.1924611141,
+        "B_up_G": 0.9252170775221542,
+        "B_down_G": 1.0235081195124316,
+        "velocity_change_local_km_s": [
+          25.646671818426803,
+          -1.3692254178523013,
+          0.0
+        ],
+        "reconstructed_relative_LOS_km_s": 16.559600881163973,
+        "pattern_speed_proxy_km_s": 371.0,
+        "normal_tilt_down_from_surface_deg": 45.0,
+        "field_normal_angle_deg": 80.0
+      },
+      "reproduced_relative_LOS_km_s": 16.55960088116398,
+      "max_relative_SI_archive_difference": 1.1102230246251565e-16,
+      "model_classification": "ordinary fast shock for this fixed supplied pair",
+      "observational_classification": "unresolved; different unmeasured completions of partial constraints remain"
+    },
+    "SLOW": {
+      "case_id": "E05-assumed-371-60-30-1.58489e+06",
+      "checks": {
+        "positive_density_pressure": true,
+        "compression": true,
+        "normal_field_continuous": true,
+        "right_to_left_mass_flow": true,
+        "conserved_fluxes": true,
+        "entropy_increases": true,
+        "slow_transition_only": true,
+        "RH_reconstruction_agrees": true,
+        "magnetic_jump_sign": true,
+        "archived_characteristics_reproduced": true,
+        "dimensional_archived_quantities_reproduced": true,
+        "same_conditional_Doppler_constraint": true,
+        "orthonormal_archived_basis": true
+      },
+      "frame": "Original local n,t1,t2 preserved; only normal boost by D. LEFT=downstream; RIGHT=upstream; signed normal flow is negative.",
+      "gamma": 1.6666666666666667,
+      "scales_SI": {
+        "rho0_kg_m3": 3.48210308279415e-13,
+        "U0_m_s": 185500.00000000017,
+        "p0_Pa": 0.011982003760471762,
+        "B0_T": 0.00012270709024206117,
+        "mu0": 1.2566370614359173e-06,
+        "mp": 1.67262192369e-27,
+        "kB": 1.380649e-23
+      },
+      "signed_w_normalized": {
+        "upstream": -1.0,
+        "downstream": -0.8856800316355908
+      },
+      "inflow_magnitude_km_s": {
+        "upstream": 185.50000000000017,
+        "downstream": 164.29364586840228
+      },
+      "compression": 1.1290759239014272,
+      "pressure_ratio": 1.2248250116282005,
+      "entropy_increase_over_cv": 0.0004654332893092028,
+      "max_dimensionless_flux_residual": 2.6645352591003757e-15,
+      "flux_residuals": {
+        "mass": 0.0,
+        "normal_momentum": -8.881784197001252e-16,
+        "t1_momentum": 0.0,
+        "t2_momentum": 0.0,
+        "t1_induction": 2.220446049250313e-15,
+        "t2_induction": 0.0,
+        "total_energy": 2.6645352591003757e-15
+      },
+      "characteristics_normalized": {
+        "upstream": {
+          "slow": 0.9201941448739722,
+          "alfven_n": 2.6347118999551102,
+          "fast": 3.094684823949762
+        },
+        "downstream": {
+          "slow": 0.959219326195917,
+          "alfven_n": 2.4795425171749326,
+          "fast": 2.9099923474301908
+        }
+      },
+      "characteristics_km_s": {
+        "upstream": {
+          "slow": 170.696013874122,
+          "alfven_n": 488.7390574416734,
+          "fast": 574.0640348426814
+        },
+        "downstream": {
+          "slow": 177.93518500934277,
+          "alfven_n": 459.9551369359504,
+          "fast": 539.803580448301
+        }
+      },
+      "analytical_reconstruction": {
+        "A": 0.14405679027095625,
+        "Bt_down_over_Bt_up": 0.9811229420184304,
+        "downstream": {
+          "rho": 1.1290759239014272,
+          "p": 0.8585207814790368,
+          "u": [
+            0.11431996836440916,
+            0.0756554028912353,
+            0.0
+          ],
+          "B": [
+            2.6347118999551102,
+            1.4924367572584216,
+            0.0
+          ]
+        },
+        "max_absolute_state_difference": 1.1796119636642288e-15
+      },
+      "model_B_strength_jump_G": -0.017492286811307434,
+      "equal_bounded_error_each_for_jump_sign_G": 0.008746143405653717,
+      "dimensional_states": {
+        "RIGHT_UPSTREAM": {
+          "rho_kg_m3": 3.48210308279415e-13,
+          "ne_cm3": 208182317.44279796,
+          "p_Pa": 0.008398586846663413,
+          "T_K": 1460996.2472796992,
+          "u_original_local_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u_shock_local_m_s": [
+            -185500.00000000017,
+            0.0,
+            0.0
+          ],
+          "B_local_T": [
+            0.00032329783086962414,
+            0.00018665608968099957,
+            0.0
+          ],
+          "B_magnitude_G": 3.733121793619992
+        },
+        "LEFT_DOWNSTREAM": {
+          "rho_kg_m3": 3.931558755325813e-13,
+          "ne_cm3": 235053642.40666732,
+          "p_Pa": 0.010286799232124966,
+          "T_K": 1584893.1924611141,
+          "u_original_local_m_s": [
+            21206.35413159792,
+            14034.077236323943,
+            0.0
+          ],
+          "u_shock_local_m_s": [
+            -164293.64586840227,
+            14034.077236323943,
+            0.0
+          ],
+          "B_local_T": [
+            0.00032329783086962414,
+            0.00018313257185347833,
+            0.0
+          ],
+          "B_magnitude_G": 3.7156295068086846
+        }
+      },
+      "source_derived": {
+        "front_normal_speed_km_s": 185.50000000000017,
+        "normal_LOS_projection": 0.7808792015073355,
+        "compression": 1.1290759239014272,
+        "ne_up_cm3": 208182317.44279796,
+        "ne_down_cm3": 235053642.40666732,
+        "T_up_K": 1460996.2472796992,
+        "T_down_K": 1584893.1924611141,
+        "B_up_G": 3.7331217936199925,
+        "B_down_G": 3.7156295068086855,
+        "velocity_change_local_km_s": [
+          21.20635413159792,
+          14.034077236323943,
+          0.0
+        ],
+        "reconstructed_relative_LOS_km_s": 16.559600881163966,
+        "pattern_speed_proxy_km_s": 371.0,
+        "normal_tilt_down_from_surface_deg": 60.0,
+        "field_normal_angle_deg": 30.0
+      },
+      "reproduced_relative_LOS_km_s": 16.559600881163966,
+      "max_relative_SI_archive_difference": 2.220446049250313e-16,
+      "model_classification": "ordinary slow shock for this fixed supplied pair",
+      "observational_classification": "unresolved; different unmeasured completions of partial constraints remain"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Conditional local ideal-MHD model comparison, not an observational reconstruction",
+  "baseline": "Prescribed coronal model with a fast+ shock at 750 km/s",
+  "new_cases": [
+    {
+      "id": "P080",
+      "left_pressure_factor": 0.8
+    },
+    {
+      "id": "P100",
+      "left_pressure_factor": 1.0
+    },
+    {
+      "id": "P120",
+      "left_pressure_factor": 1.2
+    }
+  ],
+  "unchanged_inputs": "LEFT and RIGHT density, velocity, magnetic components; RIGHT pressure; gamma=5/3; pure ionized hydrogen, Te=Tp",
+  "provenance": "All plasma inputs ASSUMED; inherited values do not become measurements of the new AIA region",
+  "branch_method": "Warm-started five-parameter regular-fan contact matching using unchanged archived RMO wave curves. This follows one nearby branch and does not enumerate all branches or prove uniqueness.",
+  "warm_start": "Recovered from the stored baseline intermediate states; baseline recalculated first",
+  "tolerances": {
+    "contact_matching": 1e-10,
+    "independent_scaled_flux": 1e-09,
+    "least_squares_xtol_ftol_gtol": 1e-11,
+    "max_nfev": 100,
+    "wall_time_seconds_per_case": 90
+  },
+  "normal": "Assumed locally along G1; not an observed three-dimensional normal",
+  "surface_radius_km": 696000,
+  "surface_radius_source": "RSUN_REF=6.9600000e8 m in the AIA JP2 FITS header; zero feature height assumed",
+  "model_coordinate": "Local x along assumed propagation normal, mapped as theta=theta0+x/R onto the existing great circle. This is not a spherical-MHD evolution.",
+  "main_initial_model_age_s": 120,
+  "age_sensitivity_s": [
+    60,
+    120,
+    240
+  ],
+  "position_anchor": "Only the first selected AIA display-change maximum is conditionally associated with the right fast shock; theta0 follows from theta_peak_first-Dfast*tau0/R. theta0 is a local Riemann interface, distinct from the eruption center.",
+  "later_frames": "No per-frame repositioning. Later peak positions are compared, not used to tune physical speeds.",
+  "obliquity_sensitivity_deg": [
+    0,
+    20,
+    40
+  ],
+  "obliquity_formula": "For a locally planar front, speed along the fixed cut is Dnormal/cos(alpha); these are assumed illustrative angles, not confidence limits.",
+  "classification_limits": "No brightness-to-density inversion, no identified contact or rarefaction, no fitted radiance response, no measured launch time. The source-centered geometry and local initial interface must not be confused."
+}

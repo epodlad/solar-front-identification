@@ -1,0 +1,25 @@
+{
+  "project": "Riemann Map Operator",
+  "url": "https://github.com/epodlad/RMO",
+  "license": "Apache-2.0",
+  "note": "Unmodified solver snapshot used in the calculations; the standalone drivers have new paths and output handling.",
+  "sha256": {
+    "__init__.py": "e3622564b3fce9b86cfbf2aff31c839e4ade3f0562424f147f57827ca2555b7d",
+    "benchmark.py": "0ae44d3b73653d6bd759f929123c9db5509511f910feb9636fcc842bc144cf0b",
+    "continuation.py": "732398132a02a70d6154c91a2c51ab48942060c90319a4dc91f310337c432f44",
+    "discontinuities.py": "3cf3882d3cb964fea08b69949b236f91a7a671ecd8875738ad034d5a9c7057ea",
+    "forward.py": "416bab6a4787741b244233a3444411dbde1753ad7109f9f093b94eea24b48e93",
+    "hydro.py": "1832c57c0d492eed563c93e45faca0dfa9f626957a45d9e4d42e9a514fe7b748",
+    "models.py": "32c972facc8dbcad680df04536fce197474dec327ab7db80b3f35b26edf23d0c",
+    "nonregular.py": "c6beb70737ecf5e60881cca43f0bad11132972d9f3815dfdde58f6ba8abcde73",
+    "physics.py": "fadaf22e80576ebef41386deebcc329bf8528d268ae42c3d535caca023ab791e",
+    "regular_fan.py": "cd5378be8503905b7c68b598486351cf239652690c549ba1d564158d5b38a010",
+    "reporting.py": "4bb0ce5e91e101853f1c200fb1ba904a733d2376ddcbd170e0029f761a03c426",
+    "rh.py": "e5bee2bad9a2ad24ef0d310fd769aeb44f619a90c705aa071a4a02015df9a02f",
+    "schema.py": "23a1ab75fea82ea1a377abb3bc985dc93d1b41e340c5acb2503abd811f2d7638",
+    "solver.py": "90b57e2f508350091ca50adc7f39246b45f4ad87a3eede146ed95a958657b99b",
+    "topology.py": "9f7cba683b794905157ac547a6b8c5956a4578a0d6db043d49b407367638152d",
+    "uncertainty.py": "0f3c29a4f2abcf204a5b49b73fe8d6e05d8c420d5a0bfb9b7eb6390a8d1c7a45",
+    "wave_curves.py": "a1e9262716fb40991be91daae29b8c3e5d919a9c188b4aaabb199e5bc8f1bdf8"
+  }
+}
