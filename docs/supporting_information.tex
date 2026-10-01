@@ -1,0 +1,119 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,booktabs}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfcreator={},pdfproducer={}}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=15
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\large\bfseries Supporting Information for\\[5pt]
+Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem}\par
+\vspace{5pt}
+Olena Podladchikova
+\end{center}
+
+\textbf{Contents:} Movies S1--S4 and an accompanying animation package
+containing the rendering script, retained inputs, and provenance records.
+The movies accompany the solar-image panels in Figure~1 and the SUVI and
+AIA comparisons in Figures~6 and~7 of the article.
+
+All movies show observed images with fixed display scales within each
+sequence. The left panel shows brightness or radiance; the right panel
+shows a difference image. Red and blue indicate positive and negative
+changes. Playback is accelerated, and the printed UT timestamps give
+the observation times. Each exposure is held on screen; no image is
+interpolated between exposures. Previously calculated feature tracks
+and model positions are retained without refitting.
+
+\textbf{Movie S1. The 2010 June 13 AIA example (E11).}
+
+Sixteen AIA 193~\AA\ exposures from 05:38:08.07 to 05:41:08.07~UT
+show the evolving off-limb structure, at approximately 12~s spacing.
+The right panel subtracts the reference at 05:35:08.07~UT.
+The retained displays use spatial Gaussian smoothing with a standard
+deviation of 1.20~arcsec and a difference scale of $\pm12$~DN~s$^{-1}$.
+No temporal smoothing is applied.
+Turquoise and orange curves mark the retained inner and outer
+brightness-crest fits. A curve appears only in exposures for which
+that fit exists; it is not extrapolated into other frames.
+The curves describe image features. The conditional fast-shock test
+in the article concerns a prescribed plasma-state pair motivated by
+the observations discussed by Kozarev et al.\ (2011) and Ma et al.\ (2011).
+
+\textbf{Movie S2. The 2011 February 16 AIA example (E05).}
+
+Twenty-nine AIA 193~\AA\ exposures from approximately 14:25:32.84
+to 14:31:08.84~UT show the region used for the EIS comparison.
+The images are exposure-normalized and registered on a common grid.
+The first selected exposure supplies the base-difference reference;
+its difference panel is therefore zero. Yellow boxes show the sixteen
+retained alternatives for placement of the EIS sampling region.
+They do not trace one uniquely resolved front. The timestamps use
+the retained time offsets, anchored to the article exposure at
+14:28:44.84~UT, and are rounded for display. The observational context
+is the analysis of Veronig et al.\ (2011). The two conditional state
+pairs in the article explore different interpretations of the
+incomplete plasma constraints.
+
+\newpage
+\textbf{Movie S3. The SUVI geometric test on 2017 September 10.}
+
+Five SUVI 195~\AA\ exposures run from 15:54:24.75 to 15:58:24.76~UT.
+Their actual spacings are approximately 70, 50, 50, and 70~s.
+The left panel shows calibrated radiance on a logarithmic scale.
+The right panel subtracts the 15:30:24.69~UT reference after sampling
+on the retained common coordinate grid. It uses a fixed asinh color
+scale. No additional spatial or temporal smoothing is applied here.
+
+Orange C marks the selected outer bright feature and pink E the
+selected inner edge. The dotted yellow outline marks the fixed
+trailing aperture B. At each time, the tested association places the
+P100 fast shock at C and its contact at E. One common shift and scale
+then determine the purple fast-rarefaction interval. This interval
+lies outside B from the second exposure onward. The labels show the
+model association being tested; they do not establish those wave
+types from image brightness. The movie visualizes the same geometric
+construction as the article. SUVI observations of this eruption were
+presented by Seaton et al.\ (2018).
+
+\textbf{Movie S4. The AIA comparison along G1 on 2017 September 10.}
+
+Five AIA 193~\AA\ exposures run from 16:00:41.84 to 16:05:29.84~UT,
+at approximately 72~s spacing. The right panel subtracts each
+preceding exposure; the first uses 15:59:29.84~UT as its reference.
+These images are retained display levels used to compare positions
+and shapes. They are not used to infer density or temperature.
+
+The gray curve is G1, an assumed great-circle path on a sphere of
+radius 696~Mm, projected into the image plane. The open turquoise
+circle marks the selected image maximum. Colored marks show the P100
+wave positions: orange for the fast shock, pink for the contact,
+purple for the fast rarefaction, and green for the other model waves.
+Only the first fast-shock position is aligned with the selected
+maximum. All later positions follow from the fixed model speeds,
+the assumed initial model age of 120~s, and the same geometry.
+The movie shows outward feature motion together with the positions
+at which the other model waves can be sought. The contact and
+rarefaction remain predictions requiring independent plasma tests.
+
+\textbf{Reproduction and data credits.}
+
+The code archive provides \texttt{run.py},
+\texttt{requirements.txt}, and all retained movie inputs.
+After installing the dependencies, run
+\texttt{python run.py animations}. Python and Matplotlib generate
+the annotated figures; FFmpeg encodes MP4 files. GIF copies and
+representative PNG/PDF frames are also generated. The README explains
+the inputs and command; \texttt{MANIFEST.json} records file checksums.
+The rendering code and numerical calculations are included in the
+release archived at
+\url{https://doi.org/10.5281/zenodo.23084162}.
+
+AIA data are courtesy of NASA/SDO and the AIA science team.
+SUVI data are provided by NOAA/NCEI. References cited in these captions
+are listed in the article bibliography.
+\end{document}

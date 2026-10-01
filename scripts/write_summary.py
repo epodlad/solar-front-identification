@@ -80,5 +80,24 @@ else:
     lines.append(
         "The checks are complete. Run `python run.py figures` with the same output directory to generate the figures."
     )
+movies = sorted((OUT / "movies").glob("*.gif"))
+if movies:
+    lines += [
+        "",
+        "## Supporting movies",
+        "",
+        "Observed exposures with retained annotations; no temporal interpolation or model refitting.",
+        "",
+    ]
+    for movie in movies:
+        item = f"- [{movie.stem} — GIF](movies/{movie.name})"
+        mp4 = movie.with_suffix(".mp4")
+        if mp4.exists():
+            item += f" · [MP4](movies/{mp4.name})"
+        lines.append(item)
+    lines += [
+        "",
+        "Caption and input details: docs/ANIMATIONS.md in the source package.",
+    ]
 (OUT / "SUMMARY.md").write_text("\n".join(lines) + "\n")
 print("Readable run report: " + str(OUT / "SUMMARY.md"))

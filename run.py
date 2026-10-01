@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the article calculations and generate the seven figures."""
+"""Run the article calculations and generate the seven figures and four supporting movies."""
 
 import argparse
 import hashlib
@@ -22,6 +22,7 @@ def main():
             "all",
             "checks",
             "figures",
+            "animations",
             "single-fronts",
             "fans",
             "solar-orbiter",
@@ -90,6 +91,7 @@ def main():
             "aia",
             "geometry",
             "figures",
+            "animations",
         },
         "checks": {"single-fronts", "fans", "solar-orbiter", "suvi", "aia", "geometry"},
     }.get(args.task, {args.task})
@@ -134,6 +136,8 @@ def main():
             )
         run("plot_models.py")
         run("plot_observations.py")
+    if "animations" in tasks:
+        run("plot_animations.py")
     if args.task in {"all", "checks", "figures"}:
         run("write_summary.py")
     versions = {
@@ -152,6 +156,8 @@ def main():
         json.dumps({"python": sys.version.split()[0], **versions}, indent=2) + "\n"
     )
     print(f"Finished. Results: {out}")
+    if "animations" in tasks:
+        print(f"Movies: {out / 'movies'}")
     if (out / "SUMMARY.md").exists():
         print(f"Open {out / 'SUMMARY.md'} for the results and figure links.")
 

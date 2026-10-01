@@ -3,7 +3,7 @@
 **From plasma states to a single-front test and a connected MHD wave system.**
 
 
-This package accompanies *Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem*, by Olena Podladchikova. It contains the inputs, Python calculations, numerical checks and plotting scripts used for the article. It can be used independently of the Riemann Map Operator website.
+This package accompanies *Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem*, by Olena Podladchikova. It contains the inputs, Python calculations, numerical checks and plotting scripts used for the article, including four supporting movies. It can be used independently of the Riemann Map Operator website.
 
 Start with the three complete state pairs. The code checks mass, momentum, magnetic induction and energy, then uses entropy and characteristic speeds to distinguish the retained fast and slow shocks. A second calculation builds three connected Riemann fans and predicts the positions of their waves. Solar Orbiter, SUVI and AIA examples show how measurements can test these connections.
 
@@ -29,7 +29,7 @@ python run.py all --output my_results
 
 **Open `results/SUMMARY.md` first.** It lists the outcomes, main numerical values and links to the figures.
 
-The seven figures are saved as PDF and PNG in `results/figures/`. The command stops if a calculation fails; its log is kept in the same results directory. All scientific figures are produced with Python and Matplotlib. Solar images remain observational raster data within the plots.
+The seven figures are saved as PDF and PNG in `results/figures/`. Four GIF movies and representative PNG/PDF frames are saved in `results/movies/`. If the FFmpeg command-line encoder is installed and on your executable search path, MP4 copies are generated too; it is optional for the calculations and GIF output. The command stops if a calculation fails; its log is kept in the same results directory. All scientific figures are produced with Python and Matplotlib. Solar images remain observational raster data within the plots.
 
 ## What to read first
 
@@ -51,9 +51,10 @@ python run.py suvi
 python run.py aia
 python run.py geometry
 python run.py figures
+python run.py animations
 ```
 
-`suvi` and `geometry` use the generated P100 fan, so run `fans` first. `figures` uses the generated checks, not copied reference answers; run `checks` or `all` first. `checks` runs every calculation without plotting.
+`suvi` and `geometry` use the generated P100 fan, so run `fans` first. `figures` uses the generated checks, not copied reference answers; run `checks` or `all` first. `checks` runs every calculation without plotting. `animations` renders the retained observed sequences and saved annotations independently of the solver. `all` also creates the movies. See [Animation guide](docs/ANIMATIONS.md) for captions, input provenance, and playback details.
 
 ## Package contents
 
@@ -62,7 +63,8 @@ python run.py figures
 - `vendor/rmo/`: the unchanged numerical solver snapshot used for the fans.
 - `reference_results/`: retained numerical results for comparison.
 - `figures/`: the seven figures regenerated and checked for this release.
-- `docs/`: methods, data sources, units and examples.
+- `docs/`: methods, data sources, units, examples, and movie captions.
+- `movies/`: the final GIF and MP4 movies for immediate viewing.
 - `MANIFEST.json`: SHA-256 checksums of the packaged files.
 - `CITATION.cff` and `.zenodo.json`: citation and archive metadata.
 
@@ -74,8 +76,15 @@ E11 and E05 are conditional complete plasma-state pairs. They are not unique rec
 
 These distinctions make the package useful: a valid model supplies explicit conditions and predicted positions that further observations can test.
 
+## Version 1.1.0
+
+This version adds supporting movies S1–S4, their retained E11/SUVI input sequences, and a rendering command. The numerical solver, physical checks, original inputs, reference numerical results, and seven article figures are unchanged from version 1.0.0.
+
+Archive for this version: https://doi.org/10.5281/zenodo.23084162.
+The stable DOI for all versions is https://doi.org/10.5281/zenodo.23072064.
+
 ## Citation and reuse
 
-Please cite the associated article when available, this software release, and the original studies and instrument teams listed in [DATA.md](docs/DATA.md). No article DOI or acceptance status is assigned here.
+Please cite the associated article when available, this software release, and the original studies and instrument teams listed in [DATA.md](docs/DATA.md).
 
 The code is distributed under Apache-2.0. Observational data retain their original terms and acknowledgements, including the Solar Orbiter data license. See [NOTICE](NOTICE); the code license does not relicense observations.

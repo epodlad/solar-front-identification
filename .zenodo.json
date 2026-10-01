@@ -7,8 +7,8 @@
       "affiliation": "National Technical University of Ukraine, Igor Sikorsky Kyiv Polytechnic Institute; Leibniz Institute for Astrophysics Potsdam (AIP)"
     }
   ],
-  "description": "<p>Standalone Python code and a compact data subset for the manuscript <em>Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem</em>.</p><p>The package reproduces three single-front tests, three regular Riemann fans and independent conservation checks, a Solar Orbiter MAG/SWA-PAS boundary diagnostic, SUVI and AIA positional comparisons, geometric checks, and seven Matplotlib figures. Full-precision inputs, a tested dependency list, reference results, data provenance and usage instructions are included.</p><p>The coronal states are prescribed. The image comparisons do not establish an observed complete fan, contact or rarefaction. Reproduction begins from the supplied image/profile subsets as documented in docs/DATA.md.</p><p>Apache-2.0 applies to code. Observational data retain their original terms: Solar Orbiter MAG and SWA data are distributed under CC BY-NC 3.0 IGO. See NOTICE for data credits and source-specific terms.</p>",
-  "version": "1.0.0",
+  "description": "<p>Python code and data for <em>Identifying Solar and Heliospheric Fronts With Conservation Laws and the MHD Riemann Problem</em>, by Olena Podladchikova.</p><p>The program tests three single-front plasma-state pairs, builds three connected MHD wave systems, and compares model predictions with Solar Orbiter, SUVI and AIA observations. It reproduces the numerical checks, seven article figures and four supporting movies.</p><p>Extract the archive and open README.md. Install the required Python packages with <code>python -m pip install -r requirements.txt</code>, then run <code>python run.py all</code>. Open <code>results/SUMMARY.md</code> to see the results and links to figures and movies. To make only the movies, run <code>python run.py animations</code>. The supplied data are included; no observation download or account is needed. FFmpeg is optional for MP4 output; GIF output does not require it.</p><p>Version 1.1.0 adds the movies and their additional image sequences. The numerical solver, physical checks, original plasma inputs and numerical reference results are unchanged from version 1.0.0. The coronal states are prescribed; the image comparisons do not establish an observed complete wave fan. Data sources and interpretation are explained in docs/DATA.md and docs/ANIMATIONS.md.</p><p>The code uses Apache-2.0. Observations retain their original terms, including CC BY-NC 3.0 IGO for Solar Orbiter MAG and SWA data. See NOTICE for credits and data-use terms.</p>",
+  "version": "1.1.0",
   "access_right": "open",
   "license": "apache-2.0",
   "keywords": [
@@ -41,5 +41,7 @@
       "relation": "references",
       "scheme": "doi"
     }
-  ]
+  ],
+  "doi": "10.5281/zenodo.23084162",
+  "publication_date": "2026-10-01"
 }
